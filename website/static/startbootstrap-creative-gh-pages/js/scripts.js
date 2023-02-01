@@ -36,7 +36,8 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#mainNav',
             offset: 74,
         });
-    };
+    }
+    ;
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -65,5 +66,31 @@ window.addEventListener('DOMContentLoaded', event => {
     //     }
     //     emailjs.send("service_xkiycpd", "template_m437o2u", params)
     // }
+
+    const stringToDisplay = '@Kozminski_AI';
+    let displayedString = '';
+    let index = 0;
+
+    const displayStringInterval = setInterval(() => {
+        displayedString += stringToDisplay[index];
+        document.getElementById('display').innerHTML = displayedString;
+        index++;
+        if (index === stringToDisplay.length) {
+            clearInterval(displayStringInterval);
+        }
+    }, 225);
+
+    const stringToDisplay2 = '"Where students and AI meet."';
+    let displayedString2 = '';
+    let index2 = 0;
+
+    const displayStringInterval2 = setInterval(() => {
+        displayedString2 += stringToDisplay2[index2];
+        document.getElementById('display2').innerHTML = displayedString2;
+        index2++;
+        if (index2 === stringToDisplay2.length) {
+            clearInterval(displayStringInterval2);
+        }
+    }, 100);
 
 });

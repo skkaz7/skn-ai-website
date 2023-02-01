@@ -8380,7 +8380,7 @@ textarea.form-control-lg {
 
 .text-white {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity));
 }
 
 .text-body {
@@ -8427,13 +8427,13 @@ textarea.form-control-lg {
 .bg-primary {
     --bs-bg-opacity: 1;
     /*background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;*/
-    background-color: mediumpurple;
+    background-color: beige;
 }
 
 .bg-secondary {
     --bs-bg-opacity: 1;
     /*background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;*/
-    background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,197,243,0.8) 50%, rgba(0,212,255,0.5) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 197, 243, 0.8) 50%, rgba(0, 212, 255, 0.5) 100%);
 }
 
 .bg-success {
@@ -11929,7 +11929,7 @@ body {
 }
 
 .text-white-75 {
-    color: rgba(255, 255, 255, 0.75) !important;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .btn-xl {
@@ -12108,4 +12108,30 @@ header.masthead h1, header.masthead .h1 {
 
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
     opacity: 1;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
 }
