@@ -22,4 +22,5 @@ from website import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='index.html'), name='index'),
+    path('integration/', TemplateView.as_view(template_name='integration.html'), name='integration'),
 ]

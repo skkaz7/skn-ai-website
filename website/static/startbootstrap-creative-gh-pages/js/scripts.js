@@ -93,4 +93,16 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     }, 100);
 
+    const eventsProjects = document.querySelectorAll('#eventsProjects');
+
+    eventsProjects.forEach(function (portfolio) {
+        portfolio.addEventListener('mouseenter', function () {
+            portfolio.classList.add('animate');
+        });
+        portfolio.addEventListener('mouseleave', function () {
+            portfolio.classList.remove('animate');
+        });
+    });
+
+
 });

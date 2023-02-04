@@ -3181,14 +3181,18 @@ textarea.form-control-lg {
 
 .btn-primary {
     color: #fff;
-    background-color: #f4623a;
-    border-color: #f4623a;
+    /*background-color: #f4623a;*/
+    /*border-color: #f4623a;*/
+    background-color: #00b4d8;
+    border-color: #00b4d8;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #cf5331;
-    border-color: #c34e2e;
+    /*background-color: #cf5331;*/
+    /*border-color: #c34e2e;*/
+    background-color: #7235a5;
+    border-color: #7235a5;
 }
 
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -11945,7 +11949,8 @@ hr.divider {
     height: 0.2rem;
     max-width: 3.25rem;
     margin: 1.5rem auto;
-    background-color: #f4623a;
+    /*background-color: #f4623a;*/
+    background-color: #00b4d8;
     opacity: 1;
 }
 
@@ -11974,11 +11979,13 @@ hr.divider-light {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-    color: #f4623a;
+    /*color: #f4623a;*/
+    color: #00b4d8;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
-    color: #f4623a !important;
+    /*color: #f4623a !important;*/
+    color: #00b4d8 !important;
 }
 
 @media (min-width: 992px) {
@@ -12035,7 +12042,10 @@ header.masthead {
     padding-bottom: calc(10rem - 4.5rem);
     /*background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/skn-ai-logo.png");*/
     /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 197, 243, 0.3) 50%, rgba(0, 212, 255, 0.3) 100%), url("../assets/img/skn-ai-logo.png");*/
-    background: linear-gradient(90deg, rgba(0, 212, 255, 0.8) 0%, rgba(255, 197, 243, 0.8) 50%, rgba(255, 255, 255, 0.5) 100%), url("../assets/img/skn-ai-logo.png");
+    /*background: linear-gradient(90deg, rgba(0, 212, 255, 0.8) 0%, rgba(255, 197, 243, 0.8) 50%, rgba(255, 255, 255, 0.5) 100%), url("../assets/img/skn-ai-logo.png");*/
+    /*background: linear-gradient(90deg, rgba(0, 212, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 197, 243, 0.5) 100%), url("../assets/img/skn-ai-logo.png");*/
+    /*background: linear-gradient(90deg, rgba(0, 180, 216, 0.5) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(114, 53, 165, 0.5) 100%), url("../assets/img/skn-ai-logo.png");*/
+    background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%), url("../assets/img/skn-ai-logo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -12134,4 +12144,33 @@ header.masthead h1, header.masthead .h1 {
 .fa-linkedin {
     background: #007bb5;
     color: white;
+}
+
+/*.animate {*/
+/*  animation: animation-name 1s ease-in-out;*/
+/*}*/
+
+/*@keyframes animation-name {*/
+/*  from {*/
+/*    transform: scale(1);*/
+/*  }*/
+/*  to {*/
+/*    transform: scale(1.15);*/
+/*  }*/
+/*}*/
+
+.animate {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
