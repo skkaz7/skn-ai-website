@@ -623,6 +623,11 @@ progress {
 .img-fluid {
     max-width: 100%;
     height: auto;
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*max-width: 650px;*/
+    /*max-height: 350px;*/
+    /*object-fit: contain;*/
 }
 
 .img-thumbnail {
@@ -1409,7 +1414,7 @@ progress {
 
     .col-lg-4 {
         flex: 0 0 auto;
-        width: 33.33333333%;
+        width: 25%;
     }
 
     .col-lg-5 {
