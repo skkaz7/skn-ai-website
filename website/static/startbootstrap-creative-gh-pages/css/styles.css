@@ -12165,18 +12165,18 @@ header.masthead h1, header.masthead .h1 {
 /*}*/
 
 .animate {
-    animation: pulse 1s ease-in-out infinite;
+    animation: blink 2s ease-in-out infinite;
 }
 
-@keyframes pulse {
+@keyframes blink {
     0% {
-        transform: scale(1);
+        opacity: 1;
     }
     50% {
-        transform: scale(1.1);
+        opacity: 0.25;
     }
     100% {
-        transform: scale(1);
+        opacity: 1;
     }
 }
 
@@ -12196,4 +12196,12 @@ header.masthead h1, header.masthead .h1 {
     border: 2px solid black;
     margin-left: 70px;
 
+}
+
+@media (max-width: 576px) {
+    .carousel img {
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-left: 0.1px;
+    }
 }
