@@ -44,20 +44,26 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="{% url 'index' %}" style="color: black">@Kozminski_AI</a>
+        <a class="navbar-brand" href="{% url 'index' %}" style="color: rgba(114, 53, 165, 1)">@Kozminski_AI</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#about" style="color: black">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team" style="color: black">Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services" style="color: black">Mission</a></li>
-                <li class="nav-item"><a class="nav-link" href="#events" style="color: black">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects" style="color: black">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#call" style="color: black">Social media</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact" style="color: black">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" style="color: lightyellow">en</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about" style="color: rgba(114, 53, 165, 1)">About</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#team" style="color: rgba(114, 53, 165, 1)">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services"
+                                        style="color: rgba(114, 53, 165, 1)">Mission</a></li>
+                <li class="nav-item"><a class="nav-link" href="#events" style="color: rgba(114, 53, 165, 1)">Events</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#projects"
+                                        style="color: rgba(114, 53, 165, 1)">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#social" style="color: rgba(114, 53, 165, 1)">Social
+                    media</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact"
+                                        style="color: rgba(114, 53, 165, 1)">Contact</a></li>
+                {#                <li class="nav-item"><a class="nav-link" href="#" style="color: lightyellow">en</a></li>#}
             </ul>
         </div>
     </div>
@@ -97,7 +103,7 @@
                     przez zaprzyjaźnione firmy. Interesują nas różne aspekty sztucznej inteligencji i jej zastosowania w
                     biznesie - np. Computer Vision, Natural Language Processing, różnorakie rodzaje predykcji i
                     klasyfikacji, uczenie nienadzorowane, oraz Reinforcement Learning.</p>
-                <a class="btn btn-light btn-xl" href="#team">Poznaj nas!</a>
+                <a class="btn btn-primary btn-xl" href="#team">Poznaj nas!</a>
             </div>
         </div>
     </div>
@@ -317,7 +323,8 @@
 <!-- Events -->
 <section class="page-section" id="events"
         {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)">#}
-         style="background: linear-gradient(0deg, rgba(179, 48, 156, 0.5) 0%, rgba(12, 142, 240, 0.5) 100%)">
+{#         style="background: linear-gradient(0deg, rgba(179, 48, 156, 0.5) 0%, rgba(12, 142, 240, 0.5) 100%)">#}
+    style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
     <div class="container px-4 px-lg-5">
         <h2 class="text-center mt-0">Past events</h2>
         <hr class="divider"/>
@@ -383,52 +390,6 @@
     </script>
 </section>
 
-{#<div id="portfolio">#}
-{#    <div class="container-fluid p-0">#}
-{#        <div class="row g-0">#}
-{#            <div class="col-lg-4 col-sm-6">#}
-{#                <a class="portfolio"#}
-{#                   href="{% url 'integration' %}" target="_blank"#}
-{#                   title="Kliknij aby dowiedzieć się więcej!">#}
-{#                    <img class="img-fluid" id="eventsProjects"#}
-{#                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/tinywow_skn-ai-integration_12727949.jpg' %}"#}
-{#                         alt="..."/>#}
-{#                    <div class="portfolio-box-caption">#}
-{#                        <div class="project-category text-white-50">Category</div>#}
-{#                        <div class="project-name">Project Name</div>#}
-{#                    </div>#}
-{#                </a>#}
-{#            </div>#}
-{#            <div class="col-lg-4 col-sm-6">#}
-{#                <a class="portfolio"#}
-{#                   href="{% url 'integration' %}" target="_blank"#}
-{#                   title="Kliknij aby dowiedzieć się więcej!">#}
-{#                    <img class="img-fluid" id="eventsProjects"#}
-{#                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/2.jpg' %}"#}
-{#                         alt="..."/>#}
-{#                    <div class="portfolio-box-caption">#}
-{#                        <div class="project-category text-white-50">Category</div>#}
-{#                        <div class="project-name">Project Name</div>#}
-{#                    </div>#}
-{#                </a>#}
-{#            </div>#}
-{#            <div class="col-lg-4 col-sm-6">#}
-{#                <a class="portfolio"#}
-{#                   href="{% url 'integration' %}" target="_blank"#}
-{#                   title="Kliknij aby dowiedzieć się więcej!">#}
-{#                    <img class="img-fluid" id="eventsProjects"#}
-{#                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/3.jpg' %}"#}
-{#                         alt="..."/>#}
-{#                    <div class="portfolio-box-caption">#}
-{#                        <div class="project-category text-white-50">Category</div>#}
-{#                        <div class="project-name">Project Name</div>#}
-{#                    </div>#}
-{#                </a>#}
-{#            </div>#}
-{##}
-{#        </div>#}
-{#    </div>#}
-{#</div>#}
 
 <section class="page-section text-white" id="call" style="background: rgb(1,2,78)">
     <div class="container px-4 px-lg-5 text-center">
@@ -444,57 +405,50 @@
         <h2 class="text-center mt-0">Projects</h2>
         <hr class="divider"/>
     </div>
-</section>
 
-<div id="portfolio">
-    <div class="container-fluid p-0">
-        <div class="row g-0">
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio"
-                   href="{% url 'integration' %}" target="_blank"
-                   title="Kliknij aby dowiedzieć się więcej!">
-                    <img class="img-fluid" id="eventsProjects"
-                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/tinywow_skn-ai-logo2.png' %}"
-                         alt="..."/>
-                    {#                    <div class="portfolio-box-caption">#}
-                    {#                        <div class="project-category text-white-50">Category</div>#}
-                    {#                        <div class="project-name">Project Name</div>#}
-                    {#                    </div>#}
-                </a>
+    <div id="portfolio">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="carousel">
+                        <div><a class="portfolio"
+                                href="{% url 'integration' %}" target="_blank"
+                                title="Kliknij aby dowiedzieć się więcej!">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/tinywow_skn-ai-integration_12727949.jpg' %}"
+                                 alt="..."/></a></div>
+                        <div><a class="portfolio"
+                                href="{% url 'integration' %}" target="_blank"
+                                title="Kliknij aby dowiedzieć się więcej!">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/2.jpg' %}"
+                                 alt="..."/></a></div>
+                        <div><a class="portfolio"
+                                href="{% url 'integration' %}" target="_blank"
+                                title="Kliknij aby dowiedzieć się więcej!">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/3.jpg' %}"
+                                 alt="..."/></a></div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio"
-                   href="{% url 'integration' %}" target="_blank"
-                   title="Kliknij aby dowiedzieć się więcej!">
-                    <img class="img-fluid" id="eventsProjects"
-                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/5.jpg' %}"
-                         alt="..."/>
-                    {#                    <div class="portfolio-box-caption">#}
-                    {#                        <div class="project-category text-white-50">Category</div>#}
-                    {#                        <div class="project-name">Project Name</div>#}
-                    {#                    </div>#}
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio"
-                   href="{% url 'integration' %}" target="_blank"
-                   title="Kliknij aby dowiedzieć się więcej!">
-                    <img class="img-fluid" id="eventsProjects"
-                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/6.jpg' %}"
-                         alt="..."/>
-                    {#                    <div class="portfolio-box-caption">#}
-                    {#                        <div class="project-category text-white-50">Category</div>#}
-                    {#                        <div class="project-name">Project Name</div>#}
-                    {#                    </div>#}
-                </a>
-            </div>
-
         </div>
     </div>
-</div>
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: true,
+                dots: true,
+            });
+        });
+    </script>
+</section>
 
 <!-- Call to action-->
-<section class="page-section bg-dark text-white" id="call">
+<section class="page-section bg-dark text-white" id="social">
     <div class="container px-4 px-lg-5 text-center">
         <h2 class="mb-4">Nasze social media</h2>
         <hr class="divider divider-light"/>
@@ -502,6 +456,7 @@
         <a href="https://www.linkedin.com/company/kozminski-ai-club/" target="_blank" class="fa fa-linkedin"></a>
     </div>
 </section>
+
 <!-- Contact-->
 <section class="page-section" id="contact">
     <div class="container px-4 px-lg-5">
