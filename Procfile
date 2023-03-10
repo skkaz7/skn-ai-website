@@ -1,0 +1,1 @@
+web: gunicorn skn_ai_website.wsgi
