@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+
+{% include 'header-for-events.html' %}
+
+<!-- About-->
+<section class="page-section bg-dark text-white" id="about"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)"#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">Revolutionizing Student-Administration Communication: Kozminski AI Club's AI Chatbot</h2>
+                <hr class="divider divider-light"/>
+               <p>Are you tired of spending hours waiting on hold or emailing back and forth with your university's administrative department? Well, Kozminski AI Club's advanced group is working on a solution: an AI-based chatbot that will help students with their administrative tasks!</p>
+               <p>The project aims to build an advanced conversational system based on the latest language models such as ChatGPT, GPT-4, LLaMa, Alpaca, Cohere, and A21. The chatbot will be able to answer students' questions about Kozminski University's academic programs, admission processes, study rules, schedules, events and infrastructure. It will utilize Natural Language Generation to generate responses in various languages, including English, Polish, German, and Spanish.</p>
+               <p>To teach the system about the university context, the team will build a vector-based knowledge base using web scraping to collect information from various sources including university websites, educational portals, student forums and academic publications. The project will also involve experimenting with different AI models and search engines to find the most efficient solution.</p>
+               <p>The benefits of implementing this chatbot on the university's website are numerous. Not only will it improve communication between the university and students, but it will also reduce the administrative workload for departments such as the Dean's office, International Relations Office, and marketing and recruitment departments during the admission process. Plus, it will attract potential students and enhance the university's reputation on the international stage.</p>
+               <p>If you're interested in learning more about chatbots, AI, text processing, and building vector-based knowledge bases, we encourage you to sign up and collaborate with us! The project team includes Project Manager Kuba Białczyk, Academic Supervisor Leon Ciechanowski, Technical Specialists Bartosz Czarnecki and Mirza Nafis Faysal, and Research Specialist Joanna Bańkowska.</p>
+               <p>In conclusion, the AI-based chatbot project by Kozminski AI Club's advanced group is a game-changer for student-administration communication. With its ability to generate language and provide instant responses, it will make administrative tasks more manageable for both students and the university. Don't miss the opportunity to join us on this exciting journey and learn how AI can make a difference in education!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

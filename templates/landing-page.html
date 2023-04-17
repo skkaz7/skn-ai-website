@@ -1,0 +1,433 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+
+{% include 'header.html' %}
+
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h1 class="text-white font-weight-bold" style="color: lightyellow" id="display"></h1>
+                <hr class="divider"/>
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="text-white-75 mb-5" style="color: lightyellow" id="display2"></p>
+                <a class="btn btn-primary btn-xl" href="#about">Discover more!</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About-->
+<section class="page-section bg-dark text-white" id="about"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)"#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">@Kozminski_AI</h2>
+                <hr class="divider divider-light"/>
+                <p>We are the trailblazers of Kozminski University, the first-ever tech student club created in November 2022 by a group of young professionals with diverse backgrounds in tech and business. Our passion is to nurture curious minds and help them develop their technical skills through real-life projects, educational materials, and exchanges with like-minded individuals. But that's not all, we also believe in giving back to the tech industry by hosting networking events, inviting guest lecturers, and providing tech support for founders with innovative startup ideas.</p>
+                <p>We are always on the lookout for opportunities to collaborate with startups and support the development of new technology. If you have a business idea that could use our expertise and support, we're all ears! Get in touch to learn more about how we can work together to bring your vision to life.</p>
+                <p>We're constantly striving to bring in experienced tech professionals as guest speakers for our lectures and events. If you're a tech guru with a wealth of knowledge and experience and are interested in sharing your insights with young tech professionals, we welcome you to join us as a speaker.</p>
+                <p>Follow us on LinkedIn to stay updated on our upcoming events and projects, and join us in our mission to learn, grow, and make a positive impact through technology.</p>
+                <a class="btn btn-primary btn-xl" href="#team">Our squad!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{#<section class="page-section bg-secondary" id="about">#}
+{#    <div style="display: flex;">#}
+{#        <div style="flex: 1; margin-right: 50px;">#}
+{#            <h2 style="display: flex;justify-content: center">O nas</h2>#}
+{#            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas vitae animi rem pariatur incidunt libero optio esse quisquam illo omnis.</p>#}
+{#        </div>#}
+{#        <img src="{% static 'startbootstrap-creative-gh-pages/assets/img/skn-ai-team.jpeg' %}" height="750" width="750">#}
+{#    </div>#}
+{#</section>#}
+
+{#<section class="page-section bg-secondary" id="about">#}
+{#    <div class="container px-4 px-lg-5">#}
+{#        <div class="row gx-4 gx-lg-5 justify-content-center">#}
+{#            <div class="col-lg-8 text-center">#}
+{#                <h2 style="display: flex;justify-content: center">O nas</h2>#}
+{#                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas vitae animi rem pariatur incidunt#}
+{#                    libero optio esse quisquam illo omnis.</p>#}
+{#                <img src="{% static 'startbootstrap-creative-gh-pages/assets/img/skn-ai-team.jpeg' %}" height="750" width="750" style="margin-left: 50px">#}
+{#            </div>#}
+{#            <img src="{% static 'startbootstrap-creative-gh-pages/assets/img/skn-ai-team.jpeg' %}" height="750" width="750" style="margin-left: 50px">#}
+{#        </div>#}
+{#    </div>#}
+{##}
+{#</section>#}
+
+<section class="page-section text-white" id="call" style="background: black">
+    <div class="container px-4 px-lg-5 text-center">
+        <hr class="divider divider-light"/>
+    </div>
+</section>
+
+<section class="page-section" id="team"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)"#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 80%)">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Meet our team!</h2>
+        <hr class="divider"/>
+    </div>
+</section>
+
+<div id="portfolio">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+                <a class="portfolio-box"
+                   href="https://www.linkedin.com/in/tomasz-syta/"
+                   target="_blank"
+                   title="Tomasz Syta">
+                    <img class="img-fluid"
+                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/fullsize/tomasz-syta.jpeg' %}"
+                         alt="..."/>
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Tomasz Syta</div>
+                        <div class="project-name">Współzałożyciel - Events and Communication Manager
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+                <a class="portfolio-box"
+                   href="https://www.linkedin.com/in/kuba-bialczyk/"
+                   target="_blank"
+                   title="Kuba Białczyk">
+                    <img class="img-fluid"
+                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/fullsize/kuba-bialczyk.jpeg' %}"
+                         alt="..."/>
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Kuba Białczyk</div>
+                        <div class="project-name">Współzałożyciel - Project Manager</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+                <a class="portfolio-box"
+                   href="https://www.linkedin.com/in/kamil-kinastowski/"
+                   target="_blank"
+                   title="Kamil Kinastowski">
+                    <img class="img-fluid"
+                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/fullsize/kamil-kinastowski.jpeg' %}"
+                         alt="..."/>
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Kamil Kinastowski</div>
+                        <div class="project-name">Współzałożyciel - Project Manager</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+                <a class="portfolio-box"
+                   href="https://www.linkedin.com/in/bankowskaj/"
+                   target="_blank"
+                   title="Joanna Bankowska">
+                    <img class="img-fluid"
+                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/skn-ai-logo.png' %}"
+                         alt="..."/>
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Joanna Bankowska</div>
+                        <div class="project-name">Linkedin Coordinator</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+                <a class="portfolio-box"
+                   href="https://www.linkedin.com/in/aleksandra-micha%C5%82owska/"
+                   target="_blank"
+                   title="Aleksandra Michałowska">
+                    <img class="img-fluid"
+                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/skn-ai-logo.png' %}"
+                         alt="..."/>
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Aleksandra Michałowska</div>
+                        <div class="project-name">Instagram Coordinator</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+                <a class="portfolio-box"
+                   href="https://www.linkedin.com/in/bill-le-57791b247/"
+                   target="_blank"
+                   title="Bill Le">
+                    <img class="img-fluid"
+                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/skn-ai-logo.png' %}"
+                         alt="..."/>
+                    <div class="portfolio-box-caption p-3">
+                        <div class="project-category text-white-50">Bill Le</div>
+                        <div class="project-name">Event Coordinator</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+                <a class="portfolio-box"
+                   href="https://www.linkedin.com/in/milosz-michno/"
+                   target="_blank"
+                   title="Miłosz Michno">
+                    <img class="img-fluid"
+                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/fullsize/milosz-michno.jpeg' %}"
+                         alt="..."/>
+                    <div class="portfolio-box-caption p-3">
+                        <div class="project-category text-white-50">Miłosz Michno</div>
+                        <div class="project-name">Event Coordinator</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+                <a class="portfolio-box"
+                   href="https://www.linkedin.com/in/nikoletta-solarz-kostov/"
+                   target="_blank"
+                   title="Nikoletta Solarz-Kostov">
+                    <img class="img-fluid"
+                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/fullsize/nikoletta.jpeg' %}"
+                         alt="..."/>
+                    <div class="portfolio-box-caption p-3">
+                        <div class="project-category text-white-50">Nikoletta Solarz-Kostov</div>
+                        <div class="project-name">Event Coordinator</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+                <a class="portfolio-box"
+                   href="https://www.linkedin.com/in/micha%C5%82-stec-a7a0a920a/"
+                   target="_blank"
+                   title="Michał Stec">
+                    <img class="img-fluid"
+                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/fullsize/michał.jpeg' %}"
+                         alt="..."/>
+                    <div class="portfolio-box-caption p-3">
+                        <div class="project-category text-white-50">Michał Stec</div>
+                        <div class="project-name">Community Manager</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+                <a class="portfolio-box"
+                   href="https://www.linkedin.com/in/sebastian-kazmierczak/"
+                   target="_blank"
+                   title="Sebastian Kaźmierczak">
+                    <img class="img-fluid"
+                         src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/fullsize/seb2.jpg' %}"
+                         alt="..."/>
+                    <div class="portfolio-box-caption p-3">
+                        <div class="project-category text-white-50">Sebastian Kaźmierczak</div>
+                        <div class="project-name">Developer</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-lg-none text-center py-0">
+    <img class="img-fluid" src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/fullsize/ai-team-photo.png' %}"
+         alt="Zdjęcie zespołu na telefonie"/>
+</div>
+
+<!-- Services-->
+<section class="page-section" id="services">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Our mission</h2>
+        <hr class="divider"/>
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Cooperation with startups</h3>
+                    <p class="text-muted mb-0">We strive to cooperate with real startups on their cases widely related to Data, Analytics, ML and programming.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Improvements at Kozminski University</h3>
+                    <p class="text-muted mb-0">We try to improve various aspects of KU using AI solutions and Data Analysis.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Learning Guidance</h3>
+                    <p class="text-muted mb-0">We want to help you learn programming and data science basics to solve real-world problems with code!</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Organization of Events</h3>
+                    <p class="text-muted mb-0">We organize events with people from the AI industry and discussion meetings focused on AI-related topics and dilemmas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Events -->
+<section class="page-section" id="events"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)">#}
+        {#         style="background: linear-gradient(0deg, rgba(179, 48, 156, 0.5) 0%, rgba(12, 142, 240, 0.5) 100%)">#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Past events</h2>
+        <hr class="divider"/>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="carousel">
+
+                        <div><a class="portfolio"
+                                href="{% url 'integration' %}" target="_blank"
+                                title="Our Journey Begins: First Integration Meeting">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/integration-650.jpg' %}"
+                                 alt="..."/></a></div>
+
+                        <div><a class="portfolio"
+                                href="{% url 'lecture' %}" target="_blank"
+                                title="Lecture: 'Generative AI in Business and Society'">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/generative-650.jpg' %}"
+                                 alt="..."/></a></div>
+
+                        <div><a class="portfolio"
+                                href="{% url 'cic' %}" target="_blank"
+                                title="CIC Thursday Gathering - Who am A.I.?">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/fullsize/cic3.jpg' %}"
+                                 alt="..."/></a></div>
+
+                        <div><a class="portfolio"
+                                href="{% url 'aula' %}" target="_blank"
+                                title="Aula Polska Conference">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/aula3.jpg' %}"
+                                 alt="..."/></a></div>
+
+                        <div><a class="portfolio"
+                                href="{% url 'creativity' %}" target="_blank"
+                                title="Creativity in The Era of Emerging Technologies">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/creativity-650.jpg' %}"
+                                 alt="..."/></a></div>
+
+                        <div><a class="portfolio"
+                                href="{% url 'marketing' %}" target="_blank"
+                                title="Marketing and AI">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/marketing-650.jpg' %}"
+                                 alt="..."/></a></div>
+
+                        <div><a class="portfolio"
+                                href="{% url 'point72' %}" target="_blank"
+                                title="Event at Point72">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/point72-650.jpg' %}"
+                                 alt="..."/></a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: true,
+                dots: true,
+            });
+        });
+    </script>
+</section>
+
+
+<section class="page-section text-white" id="call" style="background: black">
+    <div class="container px-4 px-lg-5 text-center">
+        <hr class="divider divider-light"/>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="page-section" id="projects"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)">#}
+        {#         style="background: linear-gradient(0deg, rgba(89, 51, 189, 0.5) 0%, rgba(12, 240, 216, 0.5) 100%)"#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Projects</h2>
+        <hr class="divider"/>
+    </div>
+
+    <div id="portfolio">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="carousel">
+
+                        <div><a class="portfolio"
+                                href="{% url 'certificate' %}" target="_blank"
+                                title="Automatic Certificate Generation for KU">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/certificate.png' %}"
+                                 alt="..."/></a></div>
+
+                        <div><a class="portfolio"
+                                href="{% url 'website' %}" target="_blank"
+                                title="Kozminski AI Club Website">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/website-650.png' %}"
+                                 alt="..."/></a></div>
+
+                        <div><a class="portfolio"
+                                href="{% url 'studentspeak' %}" target="_blank"
+                                title="Project with Studentspeak">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/studentspeak.png' %}"
+                                 alt="..."/></a></div>
+                                 
+                        <div><a class="portfolio"
+                                href="{% url 'promptbook' %}" target="_blank"
+                                title="Study with GPT thanks to GPT promptbook for students">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/promptbook.png' %}"
+                                 alt="..."/></a></div>
+
+                        <div><a class="portfolio"
+                                href="{% url 'chatbot' %}" target="_blank"
+                                title="Revolutionizing Student-Administration Communication: Kozminski AI Club's AI Chatbot">
+                            <img class="img-fluid" id="eventsProjects"
+                                 src="{% static 'startbootstrap-creative-gh-pages/assets/img/portfolio/thumbnails/chatbot.png' %}"
+                                 alt="..."/></a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: true,
+                dots: true,
+            });
+        });
+    </script>
+</section>
+
+{% endblock %}

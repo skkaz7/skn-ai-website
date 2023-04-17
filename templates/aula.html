@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+
+{% include 'header-for-events.html' %}
+
+<!-- About-->
+<section class="page-section bg-dark text-white" id="about"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)"#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">Aula Polska Conference</h2>
+                <hr class="divider divider-light"/>
+                <p>Our club members were in for a wild ride at the Aula Polska conference hosted at Google for Startups! The event boasted an impressive lineup of speakers, including Professor ALK Aleksandra Przegalinska, Jacek Dąbrowski, the Head of AI at Synerise, Max Salamonowicz, CEO at ACR Systems SA, and Agnieszka Kranz, COO at Just Join IT & TeenCrunch.</p>
+                <p>The presentations and discussions were jam-packed with insights and knowledge, exploring a range of fascinating topics related to AI and ChatGPT. From social challenges and opportunities to practical usage of LLM tools, risks, and changes in the job market, it was a non-stop thrill ride of learning and discovery. Our students had the opportunity to fully immerse themselves in the experience, engaging with the speakers and absorbing every bit of knowledge like a sponge. It was an unforgettable day filled with learning, growth, and inspiration.</p>
+                <p>A huge round of applause for our amazing speakers, who shared their invaluable experience and knowledge with us! We were truly lucky to have such an incredible group of individuals who are passionate about their work and eager to inspire the next generation of learners. Thank you for an unforgettable experience!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -41,7 +41,7 @@ function sendMail() {
         number: document.getElementById('phone').value
     };
 
-    emailjs.send("service_xkiycpd", "template_m437o2u", params)
+    emailjs.send("service_klcpknw", "template_m437o2u", params)
         .then(function () {
             alert("Mail sent successfully!");
         });

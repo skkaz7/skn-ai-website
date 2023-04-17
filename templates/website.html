@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+
+{% include 'header-for-events.html' %}
+
+<!-- About-->
+<section class="page-section bg-dark text-white" id="about"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)"#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">Kozminski AI Club Website</h2>
+                <hr class="divider divider-light"/>
+                <p>Cast your gaze upon this website - yet another project from our team! Crafted with care by one of our members - Sebastian Kaźmierczak, it serves as a gateway to our goals, plans, projects, and upcoming events. But that's not all - it also offers a prime opportunity to connect with us and explore potential collaborations. Take a tour of our virtual realm and uncover the treasure trove of information waiting to be explored!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

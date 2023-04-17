@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+
+{% include 'header-for-events.html' %}
+
+<!-- About-->
+<section class="page-section bg-dark text-white" id="about"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)"#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">Marketing and AI</h2>
+                <hr class="divider divider-light"/>
+                <p>Our club hosted a remarkable event at Kozminski University, featuring Piotr Bombol, a marketing maestro who shared his secrets on creating AI-powered marketing tools without writing a single line of code. The knowledge gained from this invaluable experience is nothing short of practical gold for students looking to make waves in the industry.</p>
+                <p>But the event did not stop there! The conference attendees took things to the next level by collaborating on a movie recommendation tool. Using Zapier, ChatGPT-3, and email, they developed a tool that considers your mood, feelings, and current situation to provide a movie suggestion that will knock your socks off. Move over Netflix, there's a new player in town! We can't wait to see what incredible things we'll achieve and learn at our next event!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

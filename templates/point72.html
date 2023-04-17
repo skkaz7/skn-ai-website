@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+
+{% include 'header-for-events.html' %}
+
+<!-- About-->
+<section class="page-section bg-dark text-white" id="about"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)"#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">Event at Point72</h2>
+                <hr class="divider divider-light"/>
+                <p>Our visit to Point72's office in Warsaw was truly a stroke of luck! We had the chance to learn about the company's values, as well as the skills and values they seek in their employees. Our sincere thanks go out to the team at Point72 and Aleksandra Pucek-Mioduszewska from Kozminski University Career Development and Cooperation with the Environment Office for making this visit possible.</p>
+                <p>The icing on the cake of this wonderful event was Kamil Sarzyński's expert presentation on ETL Essentials and data processing. The knowledge we gained was invaluable and will undoubtedly help those looking to pursue a career in data analysis.</p>
+                <p>The atmosphere of the office was nothing short of inspiring and motivating, and we could not have asked for a better experience. We are grateful to everyone who made this event a reality. For those who missed out, don't worry! Many more awesome events lie ahead!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

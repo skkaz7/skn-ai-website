@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+
+{% include 'header-for-events.html' %}
+
+<!-- About-->
+<section class="page-section bg-dark text-white" id="about"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)"#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">Project with Studentspeak</h2>
+                <hr class="divider divider-light"/>
+                <p>Welcome to Kozminski AI Club, where data is king! We recently teamed up with Studentspeak to elevate their user experience and bolster their customer acquisition. Our team of data wizards went above and beyond, utilizing cutting-edge technology and analytics tools to take our client's operations to new heights.</p>
+                <p>Our journey started with Google Analytics and Google Optimize, helping us gain invaluable insights into customer behavior on the website. From there, we defined conversion metrics, tracked customer acquisition sources through UTM tags, and conducted a comprehensive analysis of Studentspeak's product users, including key business metrics and user conversions. Armed with this data, we recommended top-notch product analytics tools and devised an experiment plan for A/B testing.</p>
+                <p>But we didn't stop there. We also conducted both quantitative and qualitative research to understand the problems of future Studentspeak users in their search for studies and exploration of professions and career paths. Our findings provided valuable insights that will help enhance the user experience.</p>
+                <p>To top it off, we interviewed university employees to investigate their interest in the company's products and services. Our research revealed the needs of university employees in terms of services provided by the Company.</p>
+                <p>At Kozminski AI Club, we know that data has the power to transform businesses. Our data-driven solutions provide Studentspeak with everything they need to elevate their operations and increase customer acquisition. Thank you for choosing Kozminski AI Club for your data analysis needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

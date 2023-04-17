@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+
+{% include 'header-for-events.html' %}
+
+<!-- About-->
+<section class="page-section bg-dark text-white" id="about"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)"#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">Automatic Certificate Generation for KU</h2>
+                <hr class="divider divider-light"/>
+                <p>Our fantastic team accomplished an impressive feat - we developed an end-to-end software for automatic certificate generation for attendees of events and workshops held at Kozminski University. By utilizing our programming skills and automation expertise, we created a tool that allows our university to reward students for their dedication and eagerness to learn! But wait, there's more - this opportunity was a goldmine for our club members to acquire practical skills and deliver a valuable contribution to the university community! Don't just take our word for it, come to our upcoming events and receive a certificate of your own to witness our work firsthand!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

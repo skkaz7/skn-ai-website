@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+
+{% include 'header-for-events.html' %}
+
+<!-- About-->
+<section class="page-section bg-dark text-white" id="about"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)"#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">CIC Thursday Gathering - Who am A.I.?</h2>
+                <hr class="divider divider-light"/>
+                <p>The Venture Café Warsaw Foundation held a Thursday Gathering, providing a chance for creators, entrepreneurs, investors, co-workers, and students to expand their innovation ecosystem. The Kozminski AI Club made a grand entrance, as Kamil Kinastowski and Kuba Białczyk took the stage and delivered a detailed presentation and conducted a workshop on their chatbot project created using ChatGPT. They demonstrated the features and workings of their project while providing a sneak peek into the prompts they used.</p>
+                <p>The event was a golden opportunity to show off our club and expand our network of potential collaborators. Kamil and Kuba made yet another contribution to the future of our club, and we are very thankful and proud of them.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

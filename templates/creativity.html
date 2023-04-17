@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+
+{% include 'header-for-events.html' %}
+
+<!-- About-->
+<section class="page-section bg-dark text-white" id="about"
+        {#         style="background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%)"#}
+         style="background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 100%)">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">Creativity in The Era of Emerging Technologies</h2>
+                <hr class="divider divider-light"/>
+                <p>What happens when the worlds of creativity and technology collide? We found out first-hand at the "Creativity in the Era of Emerging Technologies" conference, hosted by SGH Warsaw School of Economics in Warsaw. Our advisor, the brilliant Aleksandra Przegalinska, joined forces with a director Jan Holoubek and rapper Wojciech Sosnowski - Sokół to explore the future of creative jobs in the age of AI.</p>
+                <p>The conference was a fascinating deep dive into the possibility of artificial intelligence creating works comparable to those crafted by human authors. From music to movies and beyond, the potential for AI to revolutionize the creative industry is staggering. But can it replace human creativity entirely? The answer is no, at least not yet. The speakers unanimously agreed that while AI has a long way to go before it can take over creative jobs completely, it has enormous potential to work alongside human authors, bringing fresh ideas and new perspectives to the table. The future of creativity is exciting, indeed!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
