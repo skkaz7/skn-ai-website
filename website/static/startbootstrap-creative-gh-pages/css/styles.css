@@ -12051,8 +12051,8 @@ header.masthead {
     /*background: linear-gradient(90deg, rgba(0, 212, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 197, 243, 0.5) 100%), url("../assets/img/skn-ai-logo.png");*/
     /*background: linear-gradient(90deg, rgba(0, 180, 216, 0.5) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(114, 53, 165, 0.5) 100%), url("../assets/img/skn-ai-logo.png");*/
     /*background: linear-gradient(0deg, rgba(114, 53, 165, 0.5) 0%, rgba(0, 180, 216, 0.5) 100%), url("../assets/img/skn-ai-logo.png");*/
-    background: -webkit-linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 90%), url("../assets/img/skn-ai-logo.png");
-    background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 90%), url("../assets/img/skn-ai-logo.png");
+    /* background: -webkit-linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 90%), url("../assets/img/skn-ai-logo.png"); */
+    background: linear-gradient(0deg, rgba(225, 12, 234, 0.5) 0%, rgba(13, 18, 76, 0.9) 90%), url("../assets/img/skn-ai-logo2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
